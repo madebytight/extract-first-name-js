@@ -1,5 +1,5 @@
 {
-  "name": "extract-first-name",
+  "name": "@tight/extract-first-name",
   "description": "Extract Norwegian first name(s) from a full name.",
   "version": "0.1.0",
   "main": "dist/index.js",
