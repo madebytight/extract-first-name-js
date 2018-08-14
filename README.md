@@ -4,7 +4,7 @@ Try to extract first name from a full name. Works on common names in Norway.
 
 ## Usage
 
-```
+```js
 import extractFirstNames from '@tight/extract-first-names';
 
 extractFirstNames('per');
