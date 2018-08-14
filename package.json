@@ -1,7 +1,7 @@
 {
   "name": "@tight/extract-first-name",
   "description": "Extract Norwegian first name(s) from a full name.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "author": "Anders Svendal <anders@tight.no>",
   "license": "MIT",
