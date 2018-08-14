@@ -1,0 +1,30 @@
+{
+  "name": "extract-first-name",
+  "description": "Extract Norwegian first name(s) from a full name.",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "author": "Anders Svendal <anders@tight.no>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublish": "yarn run build",
+    "test": "ava --verbose"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.0.0-rc.1",
+    "@babel/node": "7.0.0-rc.1",
+    "ava": "1.0.0-beta.7",
+    "babel-cli": "7.0.0-beta.3",
+    "babel-preset-es2015": "^7.0.0-beta.3"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "ava": {
+    "require": [
+      "@babel/register"
+    ]
+  }
+}
