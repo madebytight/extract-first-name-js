@@ -17,7 +17,7 @@ extractFirstNames('tor-kjell');
 // => Tor-Kjell
 
 extractFirstNames('tor olsen');
-// => Tor Olsen
+// => Tor
 
 extractFirstNames('Egil Aase');
 // => Egil
