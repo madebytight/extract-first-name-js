@@ -2,18 +2,15 @@ import {
   isFirstName,
   isFirstAndLastName
 } from './check';
+import { pretty } from './format';
 
-const extract = (name) => {
+const extract = (name, options = { pretty: true }) => {
   const segments = name.split(' ');
-  if (segments.length === 1) {
-    return segments[0];
-  }
-
   let filtered = [segments[0]];
   if (isFirstName(segments[1]) && !isFirstAndLastName(segments[1])) {
     filtered.push(segments[1]);
   }
-  return filtered.join(' ');
+  return options.pretty ? pretty(filtered) : filtered.join(' ');
 };
 
 export default extract;
