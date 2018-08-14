@@ -16,6 +16,9 @@ extractFirstNames('per', { pretty: false });
 extractFirstNames('tor-kjell');
 // => Tor-Kjell
 
+extractFirstNames('lise lotte pedersen');
+// => Lise Lotte
+
 extractFirstNames('tor olsen');
 // => Tor
 
